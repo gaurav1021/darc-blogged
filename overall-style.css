@@ -1,0 +1,91 @@
+@media (min-width: 1200px) {
+  .ul-links {
+    margin-top: 1rem ;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ul-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width:600px){
+  .logo{
+    margin-left:10px !important;
+    justify-content:space-around !important;
+  }
+  .logo-link{
+    width:80% !important;
+  }
+}
+
+.active > .menu{
+  background:var(--background-primary);
+}
+
+.active{
+  background: var(--first-color) !important;
+}
+
+
+@media(min-width:1200px) and (max-width:1400px){
+  .menu> .ul-links{
+    padding-left:0px;
+    padding-right:32px;
+    gap:0.9rem;
+  }
+}
+
+@media (min-width:1400px){
+  .menu> .ul-links{
+    padding-right:32px;
+  }
+}
+
+@media (min-width:300px) and (max-width:400px){
+  .home-content{
+    height:40vh  ;
+  }
+}
+@media (min-width:400px) and (max-width:550px){
+  .home-content{
+    height:50vh  ;
+  }
+}
+@media (min-width:550px) and (max-width:700px){
+  .home-content{
+    height:55vh  ;
+  }
+}
+
+@media (min-width: 580px) and (max-width:1200px){
+  .name-logo{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .name-logo{
+    font-size: 1.8rem;
+  }
+  nav{
+    height: 6rem;
+  }
+}
+
+@media (min-width:700px) and (max-width:900px){
+  .home-content{
+    height:60vh  ;
+  }
+}
+@media (min-width:900px) and (max-width:1100px){
+  .home-content{
+    height:70vh  ;
+  }
+}

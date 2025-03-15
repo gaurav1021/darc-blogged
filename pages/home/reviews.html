@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Sliding Image Slider</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Set a fixed height for the carousel */
+    #imageSlider {
+      max-height: 100%;
+      /* Set your desired height */
+      overflow: hidden;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .carousel {
+      background-color: var(--background-primary);
+      padding: 1rem;
+      border-radius: 30px;
+      /* height:200px; */
+    }
+
+
+    .carousel-inner img {
+      /* width: 100%; */
+      margin: auto;
+      height: 100vh !important;
+      object-fit: contain;
+      /* Display the entire image without cropping */
+    }
+
+    .carousel-inner {
+      width: 80%;
+      margin: auto;
+
+    }
+
+    .carousel-item {
+      /* displ */
+      margin-top: 30px;
+    }
+
+    h3 {
+      /* color:#0077b6; */
+      color: black;
+      font-weight: var(--font-bold);
+      font-family: 'DM Sans';
+      font-size: var(--mb-1);
+    }
+
+    .txt {
+      color: black
+    }
+
+    /* .button{
+        
+    } */
+    /* .carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+  max-width: none;
+} */
+  </style>
+</head>
+
+<body>
+  <!-- Image Slider -->
+  <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h3>My sister was suffering with Rheumatoid arthritis for last five years. She was not able to perform her
+          chores due to severe joint pains. One of my relative suffering with similar arthritis. Got well with treatment
+          with Dr Alok <br><br>&nbsp;&nbsp; <span class="txt">--Ravi</span></h3>
+      </div>
+
+
+      <div class="carousel-item">
+        <h3>
+          Dr. Kalyani is one of the best doctors in the field of rheumatology. He is very polite in behaviour and give
+          sufficient time to patients. I have been visiting him since many years (now for follow ups) and I am doing
+          good under his supervision. Thank you, Dr. Alok Kalyani Ji, for your exceptional expertise and skill. Your
+          knowledge and dedication are truly commendable. I am grateful to have received treatment from a doctor of your
+          caliber. Thank you for your unwavering commitment to your profession. Highly recommended !
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Sudeshna Sarkar
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Very good doctor treat nicely my mother visited doctor she was taking medicine from previous 6 months for
+          arthritis after consulting dr. Alok kalyani we got to know that my mother is not suffering from arthritis
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Raghav Arora
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Best Doctor in Rohini delhi...i visited first time on this doctor..he checked properly & listen very carefully
+          & give all my answers which I have doubt....fully satisfied...i really recommend this doctor..
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Sumandeep Singh
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Dr Alok Kalyani is a well trained doctor and my mother's treatment is finally showing good results after
+          consulting other doctors previously.
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Mayank Dhir
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Best Rheumatologist in North Delhi. We frequently refer our patients to sir for his professional opinion and
+          get the best suggestions and treatment. Fortunate to have him in Rohini.
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Dr. Ankush
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          There are very few doctors in this generation who are committed to their patients , show concern towards them
+          and are not here for the money and D.r Alok kalyani ji is definitely one of them. I salute his dedication and
+          appreciate his service towards the country. 🫡
+          We need D.rs like him 👌👍
+          Very good D.r really really really appreciable......
+          Must visit 👍👍
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Suchi Trivedi
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Very good doctor My wife is under his treatment from last 3 years.
+          My wife is now quiet comfortable.
+          Dr kalyani is able to satisfy his patients completely.
+          I will highly recommend him for rhmatoid arthritis.
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Deepak Dham
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          My experience with doctor is very good. Because he treate my mother very well
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Manu Singhal
+          </span></h3>
+      </div>
+      <div class="carousel-item">
+        <h3>
+          Dr Alok Kalyani has extremely good knowledge related to the Rheumatoid , My relative had the disease from last
+          5 years and got treatment from various doctors but conditions didn't improved much unless they got in touch
+          under Dr Alok. Thanks to Doctor Alok for taking care and prescribing right medicines to my relative.
+          <br><br> &nbsp;&nbsp;<span class="txt">
+            --Vineet Uppal
+          </span></h3>
+      </div>
+    </div>
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Optional: Customize the auto-slide interval
+    const slider = document.querySelector('#imageSlider');
+    const carousel = new bootstrap.Carousel(slider, {
+      interval: 1000000, // Auto slide every 3 seconds
+      pause: 'hover' // Pause on hover
+    });
+  </script>
+</body>
+
+</html>
